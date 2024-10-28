@@ -27,3 +27,8 @@ body {
   footer {
     grid-area: footer;
   }
+
+  /* Temp size for images to form layout */
+  img {
+    max-width: 200px;
+  }
