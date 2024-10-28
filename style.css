@@ -30,7 +30,7 @@ body {
     display: flex;
     gap: 15px;
   }  
-  
+
   header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -38,12 +38,23 @@ body {
 
   main {
     grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
   aside {
     grid-area: aside;
+    background-color: #e0e0e0;
+    padding: 20px;
   }
   
+  aside article {
+    margin-bottom: 15px;
+}
+
   footer {
     grid-area: footer;
   }
