@@ -1,11 +1,15 @@
-/* Universal reset */
+/* Universal reset
 * {
   margin: 0;
   padding: 0;
-}
+} */
 
 html {
   font-size: 62.5%;
+}
+
+ul {
+  padding: 0;
 }
 
 /* Grid */
