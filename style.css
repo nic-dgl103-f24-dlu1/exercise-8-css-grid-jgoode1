@@ -28,6 +28,7 @@ body {
   margin: 0;
 }
 
+/* Header */
 header {
   grid-area: header;
   display: flex;
@@ -66,6 +67,7 @@ nav {
   width: 80%;
 }
 
+/* Main */
 main {
   grid-area: main;
   background-color: #fff;
@@ -114,6 +116,7 @@ main section ul li {
   font-size: 1.8rem;
 }
 
+/* Aside & Articles */
 aside {
   grid-area: aside;
   display: flex;
@@ -123,6 +126,14 @@ aside {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
 }
 
 aside article {
@@ -148,6 +159,7 @@ aside a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   grid-area: footer;
   display: flex;
@@ -167,6 +179,7 @@ footer ul a {
   text-decoration: none;
 }
 
+/* ID and Classes */
 #backToTop {
   padding: 10px 15px;
   background-color: #333;
@@ -180,14 +193,6 @@ footer ul a {
 
 #backToTop:hover {
   background-color: #555;
-}
-
-aside img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px; 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
 }
 
 .success img {
