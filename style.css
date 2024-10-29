@@ -35,7 +35,11 @@ header {
   align-items: center;
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 30px 50px;
+}
+
+header img {
+  height: 75px;
 }
 
 header nav ul {
