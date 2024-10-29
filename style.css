@@ -111,7 +111,9 @@ main section ul li {
 
 aside {
   grid-area: aside;
-  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #e0e0e0;
   padding: 20px;
   border-radius: 8px;
@@ -119,7 +121,6 @@ aside {
 }
 
 aside article {
-  justify-content: center;
   margin-bottom: 15px;
   padding: 10px;
   background-color: #f3f3f3;
@@ -175,3 +176,24 @@ footer ul a {
 #backToTop:hover {
   background-color: #555;
 }
+
+aside img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+}
+
+.success img {
+  height: 400px; 
+  width: auto;
+} 
+
+/*
+aside .logo-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+*/
