@@ -56,14 +56,14 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #aaaaaa; 
+  color: #000; 
 }
 
 header img {
   height: 75px;
 }
 
-nav {
+header nav {
   width: 80%;
 }
 
@@ -80,20 +80,26 @@ main {
 }
 
 main section {
-  background-color: #f9f9f9;
+  background: url(images/background-logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 main h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #333;
   margin-bottom: 10px;
 }
 
 main p {
   color: #555;
+  max-width: 75%;
   line-height: 1.6;
 }
 
@@ -114,6 +120,10 @@ main section ul {
 main section ul li {
   list-style: none;
   font-size: 1.8rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+
 }
 
 /* Aside & Articles */
