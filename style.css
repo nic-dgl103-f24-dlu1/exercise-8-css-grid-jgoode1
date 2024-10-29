@@ -36,6 +36,11 @@ header {
   background-color: #333;
   color: #fff;
   padding: 30px 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul li a:hover {
+  color: #ddd; 
 }
 
 header img {
@@ -51,6 +56,9 @@ header nav ul {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: color 0.3s;
 }
 
 main {
