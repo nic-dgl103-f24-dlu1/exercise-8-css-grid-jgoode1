@@ -79,6 +79,25 @@ main section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+main h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+main p {
+  color: #555;
+  line-height: 1.6;
+}
+
+main img {
+  width: 100%;
+  max-width: 400px; /* Limit the image size */
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+}
+
 aside {
   grid-area: aside;
   background-color: #e0e0e0;
