@@ -98,6 +98,17 @@ main img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
 }
 
+main section ul {
+  display: flex;  
+  flex-direction: row;  
+  gap: 20px;
+}
+
+main section ul li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
 aside {
   grid-area: aside;
   gap: 100px;
@@ -130,6 +141,7 @@ aside a {
 aside a:hover {
   text-decoration: underline;
 }
+
 footer {
   grid-area: footer;
   display: flex;
@@ -147,11 +159,6 @@ footer ul {
 footer ul a {
   color: #fff;
   text-decoration: none;
-}
-
-/* Temp size for images to form layout */
-img {
-  max-width: 200px;
 }
 
 #backToTop {
