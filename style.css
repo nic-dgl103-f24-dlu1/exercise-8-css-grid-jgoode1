@@ -4,9 +4,14 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /* Grid */
 body {
   display: grid;
+  font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   background-color: #f0f0f0;
   grid-template-columns: repeat(3, 1fr);
@@ -61,6 +66,8 @@ aside article {
 
 footer {
   grid-area: footer;
+  display: flex;
+  flex-direction: column;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -79,4 +86,19 @@ footer ul a {
 /* Temp size for images to form layout */
 img {
   max-width: 200px;
+}
+
+#backToTop {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#backToTop:hover {
+  background-color: #555;
 }
