@@ -100,14 +100,36 @@ main img {
 
 aside {
   grid-area: aside;
+  gap: 100px;
   background-color: #e0e0e0;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 aside article {
+  justify-content: center;
   margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
 }
 
+aside h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+aside a {
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
 footer {
   grid-area: footer;
   display: flex;
