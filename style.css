@@ -1,9 +1,4 @@
-/* Universal reset
-* {
-  margin: 0;
-  padding: 0;
-} */
-
+/* Universal settings */
 html {
   font-size: 62.5%;
 }
@@ -18,9 +13,9 @@ body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   background-color: #f0f0f0;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Even 3 column layout */
   grid-template-rows: auto 1fr auto;
-  grid-template-areas:
+  grid-template-areas: /* 2 columns for header and footer, 2 for main and 1 for aside */
     "header header header"
     "main main aside"
     "footer footer footer";
@@ -33,7 +28,7 @@ header {
   grid-area: header;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   background-color: #b3d4fc;
   padding: 20px;
 }
@@ -56,7 +51,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #000; 
+  color: #000;
 }
 
 header img {
@@ -80,12 +75,12 @@ main {
 }
 
 main section {
-  background: url(images/background-logo.jpg);
+  background: url(images/background-logo.jpg); /* Used Illustrator to make a quick background */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: overlay;
+  background-size: cover; /* Ensure the background image doesnt spill out/not cover the container */
+  background-color: rgba(255, 255, 255, 0.7); /* For opacity */
+  background-blend-mode: overlay; /* Use opacity this way for background image */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -112,8 +107,8 @@ main img {
 }
 
 main section ul {
-  display: flex;  
-  flex-direction: row;  
+  display: flex;
+  flex-direction: row;
   gap: 20px;
 }
 
@@ -123,7 +118,6 @@ main section ul li {
   font-weight: bold;
   font-size: 1.8rem;
   transition: color 0.3s;
-
 }
 
 /* Aside & Articles */
@@ -142,11 +136,11 @@ aside img {
   display: block;
   width: auto;
   height: 150px;
-  border-radius: 8px; 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-aside article { 
+aside article {
   margin-bottom: 15px;
   padding: 15px;
   background-color: #f3f3f3;
@@ -201,29 +195,6 @@ footer p {
   display: inline-block;
 }
 
-/* Footer Icons */
-.fa {
-  padding: 10px;
-  text-decoration: none;
-  font-size: 2rem;
-  font-size: 30px;
-  width: 50px;
-  color: #fff;
-}
-
-.fa fa-facebook {  
-  background: #3B5998; 
-  color: white;  
-}  
-.fa fa-twitter {  
-  background: #55ACEE;  
-  color: white;  
-}  
-.fa fa-pinterest {  
-  background: #cb2027;  
-  color: white;  
-}  
-
 footer ul {
   list-style: none;
 }
@@ -250,6 +221,37 @@ footer ul a {
 }
 
 .success img {
-  height: 400px; 
+  height: 400px;
   width: auto;
-} 
+}
+
+/* Footer Icons */
+.fa {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-size: 30px;
+  width: 50px;
+  color: #fff;
+}
+
+.fa fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-pinterest:hover,
+.privacy:hover,
+.terms:hover {
+  color: #b3d4fc;
+}
